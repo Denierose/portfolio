@@ -5,9 +5,6 @@ import Hero from './sections/Hero';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import { FaArrowUp } from 'react-icons/fa';
-import ScrollToTop from '../components/ScrollToTop';
-
-
 
 const Home = () => {
 
