@@ -5,7 +5,7 @@ import SocialLinks from '../../components/SocialLinks';
 
 const Hero = ()=>{
     return(
-        <Container className='hero d-flex flex-column justify-content-center align-items-center text-center rounded'>
+        <Container className='App hero d-flex flex-column justify-content-center align-items-center text-center rounded'>
             <Particle/>
             <div className='position-absolute'>
             <h1 className='display-4 fw-bold'>

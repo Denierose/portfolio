@@ -9,7 +9,8 @@ import { FaArrowUp } from 'react-icons/fa';
 const Home = () => {
 
   return (
-    <section>
+    <>
+      <div className='fullheight'>
        <AnimatePresence>
           <motion.div
             initial={{ opacity:0, y:15}}
@@ -44,8 +45,9 @@ const Home = () => {
           whileInView={{ opacity: 1, y:0}}
           transition={{delay: 1}}>
             <Contact />
-            <Container className='display-5 d-flex justify-content-center my-5'>
-              <FaArrowUp onClick={()=> {
+            <Container className='display-5 d-flex justify-content-center py-5'>
+              <FaArrowUp
+               onClick={()=> {
                 window.scrollTo({
                   top: 0,
                   left: 0,
@@ -55,7 +57,8 @@ const Home = () => {
             </Container> 
         </motion.div>
       </AnimatePresence>
-    </section>
+      </div>
+    </>
   );
 };
 

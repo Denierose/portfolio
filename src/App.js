@@ -9,7 +9,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <BrowserRouter>
         <AnimatePresence>
           <motion.div
@@ -19,13 +19,13 @@ function App() {
            <NavbarComponent />
           </motion.div>
         </AnimatePresence>
-        <main className='d-flex justify-content-center align-items-center'>
+        <>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/work" element={<Work/>} />
             <Route path="/education" element={<Education/>} />
           </Routes>
-        </main>
+        </>
       </BrowserRouter>
     <AnimatePresence>
       <motion.div
@@ -35,7 +35,7 @@ function App() {
         <Footer />
       </motion.div>
     </AnimatePresence>
-    </div>
+    </>
   );
 }
 

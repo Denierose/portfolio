@@ -4,11 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Education = () => {
   return (
-    <AnimatePresence>
+    <>
+      <AnimatePresence>
       <motion.div
         initial={{ opacity:0, y:15}}
         animate={{ opacity:1, y:0}}
-        transition={{ ease: "easeOut", duration: 2}}>
+        transition={{ ease: "easeOut", duration: 2}}
+        className="fullheight">
           <div className='text-center'>
             <h2 className='display-1 fw-bold '>My Education</h2>
             <p>These are my academic qualifications:</p>
@@ -68,9 +70,9 @@ const Education = () => {
               </div>
             </div>
           </section>
-          
       </motion.div>
     </AnimatePresence>
+    </>
   );
 };
 

@@ -7,7 +7,7 @@ import { AiFillCodeSandboxCircle } from "react-icons/ai";
 
 const NavbarComponent = ()=> {
   return(
-    <Navbar expand="lg" data-bs-theme="dark">
+    <Navbar expand="lg" data-bs-theme="dark" className="App">
       <Container>
         <Navbar.Brand href="/" className='fw-semibold d-flex align-items-center gap-2 text-light'>
           <AiFillCodeSandboxCircle className='display-6'/>
